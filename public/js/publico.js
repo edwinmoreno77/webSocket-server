@@ -17,6 +17,7 @@ const socket = io();
 
 socket.on('estado-actual', (payload) => {
 
+    //configurar en google chrome para que no bloquee el sonido(configuracin > privacidad y seguridad > configuracion del sitio > sonido > agregar sitio, ejm: localhost:8080  )
     const audio = new Audio('./audio/new-ticket.mp3');
     audio.play();
 
